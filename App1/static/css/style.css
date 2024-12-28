@@ -1,0 +1,173 @@
+/* Estilos para la imagen circular */
+.image-container {
+    text-align: center;
+    margin-top: 20px; /* Espacio entre la imagen y el título */
+}
+
+.welcome-image-circle {
+    width: 260px; /* Tamaño aumentado de la imagen */
+    height: 260px; /* Mismo tamaño para el alto */
+    border-radius: 50%; /* Forma circular */
+    object-fit: cover; /* Hace que la imagen se recorte adecuadamente */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Negro mate */
+    color: #ffffff; /* Texto blanco */
+    display: flex;
+    flex-direction: column; /* Coloca el header arriba */
+    align-items: center;
+    height: 100vh; /* Toda la altura */
+}
+
+.header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; /* Más espacio entre íconos */
+    background-color: #1c1c1c; /* Fondo ligeramente diferente */
+    padding: 15px 30px; /* Más relleno para que luzca mejor */
+    width: 90%; /* Extiende el ancho del header */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Separación con el contenido principal */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-icons i {
+    font-size: 2.3rem; /* Tamaño de los íconos */
+    color: #3a3a3a; /* Gris oscuro para que combinen con el fondo */
+    transition: color 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.header-icons i:hover {
+    color: #f5c518; /* Amarillo sutil al pasar el cursor */
+}
+
+/* Contenedor principal de las secciones */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #2a2a2a; /* Fondo oscuro para la tarjeta */
+    width: 80%; /* Ancho de la tarjeta */
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Sombra */
+    border: 1px solid #3a3a3a; /* Línea delgada */
+    gap: 20px; /* Espacio entre las secciones */
+}
+
+/* Sección izquierda */
+.left {
+    flex: 2; /* La sección izquierda ocupa el doble de espacio */
+    padding-right: 20px;
+    text-align: center; /* Centra el contenido en la sección izquierda */
+}
+
+.left h1 {
+    font-size: 3.8rem; /* Tamaño aumentado del título */
+    margin-bottom: 20px;
+    color: #f5c518; /* Amarillo sutil */
+    text-align: center; /* Centrado del título */
+}
+
+.left p {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    line-height: 1.8; /* Mejora la legibilidad */
+    margin-bottom: 15px;
+    color: #dddddd; /* Gris claro */
+}
+
+/* Sección derecha */
+.right {
+    flex: 1; /* La sección derecha ocupa el 50% de espacio */
+    border-left: 2px solid #444444; /* Línea divisoria */
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los botones desde arriba */
+    gap: 15px;
+}
+
+/* Título de la sección derecha */
+.right h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #f5c518; /* Amarillo sutil */
+    text-align: center; /* Centrado del título */
+}
+
+.right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Alinea los botones al 100% de ancho de su contenedor */
+    gap: 15px;
+    width: 100%; /* Asegura que la lista ocupe el ancho total disponible */
+}
+
+.right ul li {
+    width: 100%; /* Hace que los botones se ajusten al ancho de la sección */
+    text-align: center;
+}
+
+.section-button {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    padding: 30px 0; /* Aumenta el tamaño vertical */
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+    font-family: 'Roboto Slab', serif; /* Fuente llamativa */
+    color: #ffffff; /* Texto blanco */
+    background-color: #444444; /* Fondo gris oscuro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.section-button:hover {
+    background-color: #f5c518; /* Amarillo al pasar el cursor */
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #1c1c1c; /* Color oscuro similar al fondo */
+    color: #ffffff; /* Texto en blanco */
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    width: 90%; /* No ocupa todo el ancho */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los íconos */
+}
+
+.footer-link {
+    font-size: 2.5rem; /* Tamaño de los íconos */
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #f5c518; /* Amarillo al pasar el cursor */
+}
